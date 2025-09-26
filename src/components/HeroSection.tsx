@@ -30,7 +30,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 lg:mb-12 animate-fade-in leading-tight">
+          <h1 className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 lg:mb-12 animate-fade-in leading-tight">
             <span className="text-foreground">A gente cuida da sua</span>
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -106,11 +106,11 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
