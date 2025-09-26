@@ -43,29 +43,26 @@ const AboutSection = () => {
             {/* Text Content */}
             <div className="space-y-8 lg:space-y-10">
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-                Três amigos que decidiram transformar negócios em Belo Horizonte
+                Muito além do marketing digital…
               </h3>
 
               <div className="space-y-6 lg:space-y-8 text-muted-foreground">
                 <p className="text-lg lg:text-xl leading-relaxed">
-                  A Mynds Company nasceu da nossa paixão por tecnologia e pelo
-                  empreendedorismo local. Somos três sócios que se conheceram na
-                  faculdade e perceberam uma oportunidade: muitos negócios
-                  incríveis de BH estavam ficando para trás no mundo digital.
+                  A Mynds nasceu com o propósito de transformar a maneira como
+                  empresas se posicionam no digital.
                 </p>
 
                 <p className="text-lg lg:text-xl leading-relaxed">
-                  Em 2021, decidimos unir nossos conhecimentos em marketing
-                  digital, desenvolvimento web e gestão de projetos para criar
-                  uma agência que realmente entende as necessidades dos
-                  empreendedores locais.
+                  Entendemos que cada marca carrega uma história única e, por
+                  isso, criamos estratégias personalizadas que unem
+                  criatividade, dados e performance. Mais do que uma agência,
+                  somos parceiros de negócio:
                 </p>
 
                 <p className="text-lg lg:text-xl leading-relaxed">
-                  Hoje, já transformamos mais de 50 negócios, desde salões e
-                  clínicas até lojas e restaurantes. Nossa missão é simples:
-                  cuidar da presença digital para que nossos clientes possam
-                  focar no que fazem de melhor.
+                  caminhamos lado a lado com nossos clientes, cuidando de cada
+                  detalhe para gerar resultados consistentes, fortalecer marcas
+                  e construir relações duradouras.
                 </p>
               </div>
 

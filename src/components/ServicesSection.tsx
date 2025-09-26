@@ -10,47 +10,53 @@ import { MapPin, Smartphone, TrendingUp, CheckCircle } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
+    // PACOTE 1: A FUNDAÇÃO
     {
       icon: MapPin,
-      title: "Meu Negócio no Mapa",
+      title: "Presença Digital Essencial",
       description:
-        "Coloque seu negócio no Google Maps e apareça quando os clientes procurarem por você na região.",
+        "A base para seu negócio ser encontrado online com uma imagem profissional e confiável.",
       features: [
-        "Tráfego Pago",
-        "Grupo de suporte no WhatsApp",
-        "Reuniões quinzenais para alinhamentos",
+        "Perfil Otimizado no Google Meu Negócio",
+        "Website Institucional de Página Única (Landing Page)",
+        "SEO Local Básico para ser encontrado na sua região",
+        "Trafégo Pago",
+        "Suporte via e-mail e WhatsApp",
       ],
       price: "A partir de R$ 597/mês",
       highlight: false,
     },
+    // PACOTE 2: A ATRAÇÃO (O mais popular)
     {
       icon: Smartphone,
-      title: "Presença Digital Completa",
+      title: "Crescimento & Visibilidade",
       description:
-        "Site profissional + redes sociais para mostrar que seu negócio é moderno e confiável.",
+        "Atraia novos clientes ativamente através das redes sociais e anúncios direcionados.",
       features: [
-        "Tudo do plano básico, mais:",
-        "Gestão de redes sociais",
-        "Criação de conteúdo: 10 posts por mês (Incluindo vídeos curtos)",
-        "Relatórios mensais completos: análise detalhada de performance, métricas e insights",
-        "Otimização de anúncios",
+        "Tudo do plano Essencial, mais:", // (Manter no código, mas exibir a lista completa no site)
+        "Gestão de Redes Sociais (12 posts/mês, incluindo reels)",
+        "Gestão de Campanhas de Tráfego Pago (Google & Meta Ads)",
+        "Relatório Mensal de Desempenho e Aquisição",
+        "1 Reunião mensal de alinhamento estratégico",
       ],
-      price: "A partir de R$ 749/mês",
+      price: "A partir de R$ 997/mês", // Aumentei o preço para justificar o tráfego pago
       highlight: true,
     },
+    // PACOTE 3: A CONVERSÃO
     {
       icon: TrendingUp,
-      title: "Marketing que Vende",
+      title: "Performance & Vendas",
       description:
-        "Campanhas direcionadas para trazer mais clientes e aumentar suas vendas online.",
+        "Transforme cliques em clientes com ferramentas de marketing avançadas e foco total em conversão.",
       features: [
-        "Tudo do plano intermediário, mais:",
-        "Criação de contenúdo: 20 posts por mês (Incluindo briefings e gravacões)",
-        "Criação de landing pages",
-        "Reunioes semanais de alinhamento e estratégia",
+        "Tudo do plano Crescimento, mais:", // (Manter no código, mas exibir a lista completa no site)
+        "Gestão de Redes Sociais (20 posts/mês com estratégia de conteúdo)",
+        "Criação de Landing Pages para campanhas específicas",
+        "Automação de E-mail para Captura de Leads",
+        "Dashboard de BI para análise de ROI em tempo real",
+        "Reuniões quinzenais de performance",
       ],
-      price: "A partir de R$ 1.098/mês",
-      highlight: false,
+      price: "A partir de R$ 1.597/mês", // Aumentei para refletir o valor das landing pages e automação
     },
   ];
 
@@ -63,7 +69,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicos" className="py-24 lg:py-32 bg-muted/30">
+    <section id="servicos" className="py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="text-center mb-20 lg:mb-28">

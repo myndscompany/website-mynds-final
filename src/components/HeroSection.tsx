@@ -31,22 +31,21 @@ const HeroSection = () => {
         <div className="max-w-6xl mx-auto text-center">
           {/* Main Headline */}
           <h1 className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 lg:mb-12 animate-fade-in leading-tight">
-            <span className="text-foreground">A gente cuida da sua</span>
+            <span className="text-foreground">Posicionamos o seu</span>
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              internet
+              negocio
             </span>
             <br />
-            <span className="text-foreground">pra você cuidar do seu</span>
+            <span className="text-foreground">no</span>
             <br />
-            <span className="text-accent">negócio</span>
+            <span className="text-accent">digital</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-12 lg:mb-16 max-w-4xl mx-auto animate-slide-up leading-relaxed px-4">
-            Somos uma agência de Belo Horizonte especializada em levar negócios
-            locais para o sucesso digital. Cuidamos de tudo: site, redes sociais
-            e presença online.
+            Da estratégia ao resultado: fortalecemos sua presença online com
+            performance e criatividade
           </p>
 
           {/* CTA Buttons */}
