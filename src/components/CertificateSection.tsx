@@ -1,5 +1,7 @@
 import React from "react";
 import { Award } from "lucide-react"; // Usando Lucide React, parte do seu Tech Stack
+import googlePartnerImg from "../assets/googlelogofinal.png"; // Imagem do Google Partner (verifique o caminho)
+import metaPartnerImg from "../assets/metalogofinal.png"; // Imagem do Meta Business Partner
 
 // Definição da interface para os dados dos certificados, seguindo a prática TypeScript Strict
 interface Certificate {
@@ -13,13 +15,13 @@ const certificates: Certificate[] = [
   {
     id: 1,
     name: "Google Partner",
-    imageUrl: "/assets/google-partner.png", // ATUALIZE ESTE CAMINHO
+    imageUrl: googlePartnerImg, // Caminho da imagem importada
     link: "#", // Adicione o link de verificação real
   },
   {
     id: 2,
     name: "Meta Business Partner",
-    imageUrl: "/assets/meta-partner.png", // ATUALIZE ESTE CAMINHO
+    imageUrl: metaPartnerImg, // Caminho da imagem importada
     link: "#", // Adicione o link de verificação real
   },
 ];
@@ -61,23 +63,24 @@ export function CertificateSection() {
               className="group flex flex-col items-center p-8 bg-white/90 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-[var(--border)]"
             >
               {/* Imagem do Certificado */}
-              <div className="mb-4 w-48 h-auto object-contain">
+              <div className="mb-4 w-60 h-60 overflow-hidden rounded-xl">
                 {/* O atributo 'alt' é crucial para Acessibilidade (ARIA Labels) */}
                 <img
                   src={cert.imageUrl}
                   alt={`Certificado ${cert.name}`}
-                  className="w-full h-full"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
 
               {/* Nome do Certificado e Ícone */}
-              <div className="flex items-center space-x-2 mt-4">
+              {/* <div className="flex items-center space-x-2 mt-4">
                 <p className="text-xl font-semibold text-[var(--primary-dark)]">
                   {cert.name}
-                </p>
-                {/* Ícone de âncora do Lucide React, parte do seu Tech Stack */}
-                <Award className="w-5 h-5 text-[var(--primary)] group-hover:text-[var(--primary-dark)] transition-colors" />
-              </div>
+                </p> */}
+
+              {/* Ícone de âncora do Lucide React, parte do seu Tech Stack */}
+              {/* <Award className="w-5 h-5 text-[var(--primary)] group-hover:text-[var(--primary-dark)] transition-colors" />
+              </div> */}
             </a>
           ))}
         </div>

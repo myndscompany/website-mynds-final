@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Menu, X } from "lucide-react";
+import newLogo from "../assets/favicon.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,17 +20,24 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg lg:text-xl">
-                M
-              </span>
-            </div>
-            <span className="text-xl lg:text-2xl font-bold text-foreground">
+
+          <a href="/" className="flex items-center space-x-3">
+            {/* A nova logo de IMAGEM */}
+            <img
+              src={newLogo}
+              alt="Logo da Mynds Company"
+              // Classes Tailwind para formato e estilo:
+              // w-10 h-10: Tamanho
+              // rounded-full: Formato redondo
+              // object-cover: Garante que a imagem preencha o espaço sem distorcer
+              // border-2 border-[var(--primary)]: Borda seguindo o Design System
+              className="w-10 h-10 rounded-full object-cover border-2 border-[var(--primary)] shadow-md"
+            />
+
+            <span className="text-xl font-bold text-foreground hidden sm:inline">
               Mynds Company
             </span>
-          </div>
-
+          </a>
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12">
             {/* 1. Início */}
@@ -81,7 +89,6 @@ const Header = () => {
               Contato
             </button>
           </nav>
-
           {/* Theme Toggle, Login Button & Mobile Menu */}
           <div className="flex items-center space-x-2">
             <ThemeToggle />
