@@ -36,9 +36,9 @@ const HeroSection = () => {
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               negocio
             </span>
-            <br />
-            <span className="text-foreground">no</span>
-            <br />
+
+            <span className="text-foreground"> no </span>
+
             <span className="text-accent">digital</span>
           </h1>
 
